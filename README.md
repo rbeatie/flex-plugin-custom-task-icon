@@ -3,42 +3,6 @@
 # TaskListItem
 [https://media.twiliocdn.com/sdk/js/flex/releases/1.16.0/docs/TaskListItem.html](https://media.twiliocdn.com/sdk/js/flex/releases/1.16.0/docs/TaskListItem.html) 
 
-`<TaskListItem {...TaskListItem.TaskListItemProps} />`
-
-### TaskListItemChildrenProps
-
-Properties of TaskListItem.
-Properties:
-
-|Name    |Type    |Attributes  | Description |
-|:-------|:-------|:-----------|:-----------:|
-|Badge|	Object    |	\<optional> | Set of properties for internal Badge element customisable by TaskChannel |
-
-### TaskListItemProps
-
-Properties of TaskListItem.
-
-Properties:
-
-|Name    |Type    |Attributes  | Description |
-|:-------|:-------|:------|:-----------|
-| visible|boolean| \<optional> | Whether the task list item is visible or not. |
-| selected | boolean |\<optional> | Whether the task list item is selected or not.|
-| selectedTaskSid |	string |\<optional> | Sid of the selected task.|
-| onSelected |function |\<optional> |Callback when the task is selected.|
-| **icon** | **string  React.ReactNode** | **\<optional>** | **Task list item icon.**|
-| iconColor | string |	\<optional> |Icon color.|
-| actions |	Array  <React.ReactElement.<any>> |\<optional>| Override default accept or reject actions.|
-| firstLine |	React.ReactNode	| \<optional> |First line displayed in the task list item. |
-| secondLine |	React.ReactNode	| \<optional> |Second line displayed in the task list item. |
-| extraInfo |	React.ReactNode	| \<optional> |Additional info displayed in the task list item. |
-| large |	boolean | \<optional> | Whether the item is large or not. If true, the lower area is displayed. |
-| itemSize | TaskListItem.TaskListItemSize| \<optional> | Task list item size. |
-| children | DynamicComponentChildren.<TaskListItem.TaskListItemChildrenProps> | \<optional> | children |
-
-
-# Task Channel Definition API
-
 ## Defining A Voicemail Channel
 
 ### Where do I place the definition? 
@@ -48,20 +12,24 @@ You will may want to place this before the app initializes. Here we placed it in
 ### Task Channel Definition
 
 ```jsx harmony
+// define a new default channel definition
 
-const definition = flex.DefaultTaskChannels.createDefaultTaskChannel(
+    const definition = flex.DefaultTaskChannels.createDefaultTaskChannel(
       'voicemail',
       (task) => {
         console.log('Your almost there!', task);
         return task.taskChannelUniqueName === 'voicemail';
-      }, "Hangup",
+      }, 
+      "Hangup",
       "HangupBold",
-      "#d2a926"
+      "#d2a926" // MarryGold
     );
 
-flex.TaskChannels.register(definition);
-
+    // register the definition
+    
+    flex.TaskChannels.register(definition);
 ```
+
 ### Icons
 
 The icons used hewre are using is `Hangup` and `HangupBold`

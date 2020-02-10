@@ -1,10 +1,8 @@
 import React from 'react';
 import { VERSION }  from '@twilio/flex-ui';
 import { FlexPlugin } from 'flex-plugin';
-
 import CustomTaskListContainer from './components/CustomTaskList/CustomTaskList.Container';
 import reducers, { namespace } from './states';
-import {defaultChannelColors} from "@twilio/flex-ui";
 
 const PLUGIN_NAME = 'IconSwapPlugin';
 
@@ -31,17 +29,20 @@ export default class IconSwapPlugin extends FlexPlugin {
       .add(<CustomTaskListContainer key="demo-component" />, options);
 
 
-    // Adding a new Custom Channel Definition
+    // define a new default channel definition
 
     const definition = flex.DefaultTaskChannels.createDefaultTaskChannel(
       'voicemail',
       (task) => {
         console.log('Your almost there!', task);
         return task.taskChannelUniqueName === 'voicemail';
-      }, "Hangup",
+      },
+      "Hangup",
       "HangupBold",
       "#d2a926" // MarryGold
     );
+
+    // register the definition
 
     flex.TaskChannels.register(definition);
   }
