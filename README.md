@@ -9,7 +9,7 @@
 
 You will may want to place this before the app initializes. Here we placed it inside of the plugins `init(flex, manager)` method. 
  
-### Task Channel Definition
+#### Task Channel Definition
 
 ```jsx harmony
 // define a new default channel definition
@@ -29,7 +29,7 @@ You will may want to place this before the app initializes. Here we placed it in
     flex.TaskChannels.register(definition);
 ```
 
-# What Icons can I use?
+### What Icons can I use?
 
 You can use any of the listed [Flex Icons List](https://www.twilio.com/docs/flex/ui-icons)
  or create a custom icon and provide the JSX instead odf a string. For example...
@@ -37,7 +37,7 @@ You can use any of the listed [Flex Icons List](https://www.twilio.com/docs/flex
 The icons used here are `Hangup` and `HangupBold`. You can also provide `<Icon icon="Hangup" />` or `<Icon icon="HangupBold" />`. 
 This means you can use `<Icon icon="custom" />` as well which is detailed here: [https://www.twilio.com/docs/flex/ui-icons#create-custom-icons](https://www.twilio.com/docs/flex/ui-icons#create-custom-icons) 
 
-# Create A Custom Task Channel
+### How do I Make A "voicemail" Task Channel?
 
 Please navigate to your TaskRouter Dashboard here: [https://www.twilio.com/console/taskrouter/](https://www.twilio.com/console/taskrouter/).
 
@@ -50,9 +50,9 @@ Now click the red Add ( + ) button and create a `voicemail` channel.
 And done. :) 
 
 
-# More Resources and Notes
+## More Resources and Notes
 
-## Chat vs Call vs Default
+### Chat vs Call vs Default
 
 These all behave differently. For example: 
 
