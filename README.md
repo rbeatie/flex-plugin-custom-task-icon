@@ -36,7 +36,20 @@ The icons used hewre are using is `Hangup` and `HangupBold`
 
 [Flex Icons List](https://www.twilio.com/docs/flex/ui-icons)
 
+# Create A Custom Task Channel
+
+Please navigate to your TaskRouter Dashboard here: [https://www.twilio.com/console/taskrouter/](https://www.twilio.com/console/taskrouter/).
+
+Select your workspace and then on the left nav link list, click on TaskChannels.
+
+![Taskrouter Dashboard nav list screen cap](TaskRouterScreenCap.png)   
+
+Now click the red Add ( + ) button and create a `voicemail` channel.
+
+And done. 
+
 # Notes
+
 
 ## Chat vs Call vs Default
 
