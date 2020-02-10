@@ -29,11 +29,13 @@ You will may want to place this before the app initializes. Here we placed it in
     flex.TaskChannels.register(definition);
 ```
 
-### Icons
+# What Icons can I use?
 
-The icons used hewre are using is `Hangup` and `HangupBold`
-
-[Flex Icons List](https://www.twilio.com/docs/flex/ui-icons)
+You can use any of the listed [Flex Icons List](https://www.twilio.com/docs/flex/ui-icons)
+ or create a custom icon and provide the JSX instead odf a string. For example...
+ 
+The icons used here are `Hangup` and `HangupBold`. You can also provide `<Icon icon="Hangup" />` or `<Icon icon="HangupBold" />`. 
+This means you can use `<Icon icon="custom" />` as well which is detailed here: [https://www.twilio.com/docs/flex/ui-icons#create-custom-icons](https://www.twilio.com/docs/flex/ui-icons#create-custom-icons) 
 
 # Create A Custom Task Channel
 
@@ -45,10 +47,10 @@ Select your workspace and then on the left nav link list, click on TaskChannels.
 
 Now click the red Add ( + ) button and create a `voicemail` channel.
 
-And done. 
+And done. :) 
 
-# Notes
 
+# More Resources and Notes
 
 ## Chat vs Call vs Default
 
@@ -59,31 +61,7 @@ These all behave differently. For example:
 Find more on the channel types here: [https://www.twilio.com/docs/flex/task-channel-definition-api#creating-custom-channel-definitions-with-helper-functions](https://www.twilio.com/docs/flex/task-channel-definition-api#creating-custom-channel-definitions-with-helper-functions)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Original Plugin READEME
 
 # Your custom Twilio Flex Plugin
 
