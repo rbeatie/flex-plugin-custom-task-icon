@@ -34,7 +34,6 @@ export default class IconSwapPlugin extends FlexPlugin {
     const definition = flex.DefaultTaskChannels.createDefaultTaskChannel(
       'voicemail',
       (task) => {
-        console.log('Your almost there!', task);
         return task.taskChannelUniqueName === 'voicemail';
       },
       "Hangup",

@@ -17,7 +17,6 @@ You will may want to place this before the app initializes. Here we placed it in
     const definition = flex.DefaultTaskChannels.createDefaultTaskChannel(
       'voicemail',
       (task) => {
-        console.log('Your almost there!', task);
         return task.taskChannelUniqueName === 'voicemail';
       }, 
       "Hangup",
