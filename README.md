@@ -1,4 +1,4 @@
-# Swapping Icons for TaskListItems
+# Custom Icons for TaskListItems
 
 # TaskListItem
 [https://media.twiliocdn.com/sdk/js/flex/releases/1.16.0/docs/TaskListItem.html](https://media.twiliocdn.com/sdk/js/flex/releases/1.16.0/docs/TaskListItem.html) 
