@@ -7,34 +7,35 @@
 
 ### Where do I place the definition? 
 
-You will may want to place this before the app initializes. Here we placed it inside of the plugins `init(flex, manager)` method. 
+You will may want to place this before the plugin is done initializing. Here we have it inside of the plugins `init(flex, manager)` method. 
  
 #### Task Channel Definition
 
 ```jsx harmony
-// define a new default channel definition
+  // define a new default channel definition
 
-    const definition = flex.DefaultTaskChannels.createDefaultTaskChannel(
-      'voicemail',
-      (task) => {
-        return task.taskChannelUniqueName === 'voicemail';
-      }, 
-      "Hangup",
-      "HangupBold",
-      "#d2a926" // MarryGold
-    );
+  const definition = flex.DefaultTaskChannels.createDefaultTaskChannel(
+    'voicemail',
+    (task) => {
+      return task.taskChannelUniqueName === 'voicemail';
+    }, 
+    "Hangup",
+    "HangupBold",
+    "#d2a926" // Marry Gold
+  );
 
-    // register the definition
+  // register the definition
     
-    flex.TaskChannels.register(definition);
+  flex.TaskChannels.register(definition);
 ```
 
 ### What Icons can I use?
 
 You can use any of the listed [Flex Icons List](https://www.twilio.com/docs/flex/ui-icons)
- or create a custom icon and provide the JSX instead odf a string. For example...
+ or create a custom icon and provide the JSX instead of a string. For example...
  
 The icons used here are `Hangup` and `HangupBold`. You can also provide `<Icon icon="Hangup" />` or `<Icon icon="HangupBold" />`. 
+
 This means you can use `<Icon icon="custom" />` as well which is detailed here: [https://www.twilio.com/docs/flex/ui-icons#create-custom-icons](https://www.twilio.com/docs/flex/ui-icons#create-custom-icons) 
 
 ### How do I Make A "voicemail" Task Channel?
