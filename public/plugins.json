@@ -8,6 +8,6 @@
         "@twilio/flex-ui": "^1"
       }
     ],
-    "src": "http://localhost:3000/plugin-icon-swap.js"
+    "src": "https://localhost:3000/plugin-icon-swap.js"
   }
 ]
